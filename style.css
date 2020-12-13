@@ -1,0 +1,662 @@
+@font-face {
+    font-family: librefranklinbold;
+    src: url(fonts/librefranklin-bold.ttf);
+}
+
+@font-face {
+    font-family: librefranklinsemibold;
+    src: url(fonts/librefranklin-semibold.ttf);
+}
+
+@font-face {
+    font-family: librefranklin;
+    src: url(fonts/librefranklin-regular.ttf);
+}
+
+@font-face {
+    font-family: ibmplexmono;
+    src: url(fonts/IBMPlexMono-Regular.otf);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #585858;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: black;
+    position: relative;
+    background-image: url("images/header-pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: 650px;
+    padding: 20px;
+}
+
+.CALTRENDS-logo {
+    background-image: url("images/CALTRENDS-LOGO1.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    height: 130px;
+    position: relative;
+    text-align: left;
+    text-indent: -999999999px;
+    top: 10px;
+    left: 12%;
+    width: 240px;
+    margin: 0px 100px 0px 0px;
+}
+
+.CALTRENDS-footerlogo {
+    background-image: url("images/CALTRENDS-LOGO1.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    height: 130px;
+    position: relative;
+    text-align: left;
+    text-indent: -999999999px;
+    top: 50px;
+    left: 5.5%;
+    width: 240px;
+    margin: 0px 100px 0px 0px;
+}
+
+footer {
+    background: rgb(11, 19, 32);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: 300px;
+    padding: 20px;
+}
+
+.footer-nav {
+    position: relative;
+    margin: 20px 10px;
+    list-style-type: none;
+    text-align: right;
+    left: -5%;
+    top: -50px;
+}
+
+
+.footer-nav li {
+    margin: 10px;
+    display: inline;
+}
+
+
+/* Since the Cal Trends logo has its on class maybe we can specify the margin to the right to be larger as we need so there is adequate space between nav bar and logo */
+
+a {
+    font-family: librefranklinsemibold;
+    color: white;
+    text-decoration: none;
+}
+
+h3 {
+    font-family: librefranklinbold;
+    font-size: 580%;
+    margin: 80px 600px;
+    text-align: center;
+    position: relative;
+    top: -140px;
+}
+
+.sub-pages {
+    text-align: left;
+    margin: 80px 400px 0px 80px;
+    left: 10%;
+}
+
+h5 {
+    font-family: librefranklinsemibold;
+    color: white;
+    position: relative;
+    margin: 80px;
+    top: -100px;
+    left: 10%;
+    font-size: 130%;
+}
+
+p{
+    font-family: ibmplexmono;
+    text-align: center;
+    position: relative;
+    top: -180px;
+    color: white;
+    text-shadow: 1px 1px rgb(34, 34, 34);
+    font-size: 108%;
+}
+
+h4{
+    font-family: librefranklinbold;
+    font-size: 180%;
+    margin: 20px;
+    color: black;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.end-comment{
+    font-family: librefranklinbold;
+    font-size: 180%;
+    margin: 20px;
+    color: black;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.not-bold{
+    font-family: librefranklin;
+    font-weight: normal;
+    font-size: 100%;
+    color: rgb(170, 170, 170);
+}
+
+.main {
+    background:white;
+    height: 500px;
+    padding: 5% 15%;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    margin: 1%;
+    text-indent: -999999999px;
+}
+
+.column-commercial {
+    float: left;
+    width: 30%;
+    margin: 1%;
+    text-indent: -999999999px;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.plan {
+    background-image: url("images/plan-pic.jpg");
+    background-size: cover;
+    height: 220px;
+}
+
+/* we can use text-indent: initial to reset indent */
+.title {
+    font-family: librefranklinbold;
+    text-indent: initial;
+    position: relative;
+    top: 220px;
+    color: black;
+    font-weight: bold;
+    font-size: 140%;
+}
+
+.description{
+    font-size: 105%;
+    text-indent: initial;
+    position: relative;
+    top: 220px;
+    text-align: left;
+    color: rgb(170, 170, 170);
+    text-shadow: none;
+}
+
+.design {
+    background-image: url("images/design-pic.jpg");
+    background-size: cover;
+    height: 220px;
+}
+
+.install {
+    background-image: url("images/install-pic.jpg");
+    background-size: cover;
+    height: 220px;
+}
+
+
+/* Slideshow container */
+.slideshow{
+    background: white;
+}
+
+.slideshow-container {
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+    padding: 200px 0px 0px 0px;
+}
+  
+  /* Hide the images by default */
+.mySlides {
+    display: none;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.work {
+    background: white;
+    padding: 5% 10%;
+}
+
+/* GALLERY EXCLUSIVE */
+
+/* Slideshow container */
+.slideshow-gallery{
+    background: white;
+}
+
+.slideshow-container-gallery {
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+    padding: 200px 0px 0px 0px;
+}
+  
+  /* Hide the images by default */
+.mySlides {
+    display: none;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* ABOUT EXCLUSIVE */
+
+
+/* CONTACT EXCLUSIVE */
+
+.contact {
+    background: white;
+}
+
+.phone {
+    color: black;
+    position: relative;
+    text-align: center;
+}
+
+.email {
+    color: black;
+    position: relative;
+    text-align: center;
+}
+
+/* COMMERCIAL EXCLUSIVE */
+
+.work-commercial {
+    background: white;
+    padding:  600px 0px 0px 0px;
+}
+
+.main-commercial {
+    background: white;
+    background-size: 800px;
+    padding: 0%15%;
+}
+
+.pic-commercial {
+    background: white;
+    background-image: url(images/commercial.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 700px;
+    background-position: center;
+    position: relative;
+}   
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 1660px) {
+    h3 {
+        margin: 80px;
+    }
+}
+
+@media only screen and (min-width: 1060px) {
+    ul {
+        position: relative;
+        top: -110px;
+        margin: 20px 10px;
+        list-style-type: none;
+        text-align: right;
+        left: 0%;
+        font-size: 110%;
+    }
+    
+    li {
+        margin: 20px;
+        display: inline;
+        position: relative;
+        left: -30px;
+    }
+
+    header .CALTRENDS-logo a {
+        margin: 0px 150px 0px 0px;
+    }
+
+    footer .CALTRENDS-footerlogo a {
+        margin: 0px 150px 0px 0px;
+    }
+
+    nav .mobile-nav  {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 1059px) {
+
+    header .CALTRENDS-logo a {
+        margin: 0px 150px 0px 0px;
+    }
+
+    nav .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav{
+        position: relative;
+        top: -120px;
+        margin: 0px 0px;
+        padding: 20px;
+        list-style-type: none;
+        text-align: right;
+        list-style: none;
+    }
+
+    .mobile-nav-dropdown {
+        display: none;
+        position: absolute;
+        list-style: none;
+        background-color: rgb(100, 187, 92);
+        text-align: center;
+        width: 100%;
+        padding: 10px 10px;
+        z-index: 100;
+    }
+
+    .mobile-nav:hover .mobile-nav-dropdown {
+        display: block;
+    }
+
+    .mobile-nav-dropdown li{
+        padding: 30px 30px;
+    }
+
+    .slideshow-container {
+        max-width: 1500px;
+        position: relative;
+        margin: auto;
+        padding: 200px 0px 0px 0px;
+    }
+
+    .slideshow-container {
+        padding: 250px 0px 0px 0px;
+    }
+
+    footer .CALTRENDS-footerlogo {
+        background-image: url("images/CALTRENDS-LOGO1.png");
+        background-size: 60%;
+        background-repeat: no-repeat;
+        position: relative;
+        left: 42%;
+        height: 130px;
+        top: 10px;
+        width: 240px;
+    }
+
+    .footer-nav {
+        position: relative;
+        top: 20px;
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    
+    .footer-nav li {
+        margin: 10px;
+    }
+
+    h5{
+        left: 0%;
+    }
+
+    .sub-pages{
+        margin: 80px;
+        left: 0%;
+    }
+
+    .CALTRENDS-logo {
+        left: 3%;
+    }
+}
+
+@media only screen and (max-width: 922px) {
+    h3 {
+        font-size: 400%;
+        top: -100px;
+    }
+
+    P{
+        top: -140px;
+    }
+
+    .slideshow-container {
+        padding: 330px 0px 0px 0px;
+    }
+
+    .main {
+        background:white;
+        height: 500px;
+        padding: 5% 5%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .column {
+        float: left;
+        width: 80%;
+        text-indent: -999999999px;
+        margin: 50px 30px 130px 50px;
+    }
+
+    .column-commercial {
+        float: left;
+        width: 80%;
+        text-indent: -999999999px;
+        margin: 50px 30px 400px 50px;
+    }
+
+    .work-commercial {
+        background: white;
+        padding:  00px 0px 0px 0px;
+    }
+
+    .slideshow-container {
+        top: 150px;
+        padding: 330px 0px 0px 0px;
+    }
+
+    .main {
+        background:white;
+        height: 500px;
+        padding: 5% 5%;
+    }
+
+    h4  {
+        padding: 50px 0px 30px 0px;
+    }
+
+    .end-comment{
+        padding: 100px 0px;
+    }
+
+    .commercial-description {
+        display: none;
+    }
+}
+/* maybe we can do margins depending on percentage according 
+to the res... so the higher our res goes the greater margin percentage we use.. this goes for the headers and body text */

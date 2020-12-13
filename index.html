@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Cal Trends </title>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+
+    <body>
+        <header>
+
+            <div class="CALTRENDS-logo"> </div>
+            <nav>
+                <ul class="desktop-nav">
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="pages/about.html"> About </a></li>
+                    <li><a href="pages/gallery.html"> Gallery </a></li>
+                    <li><a href="pages/commercial.html"> Commercial/Residential </a></li>
+                    <li> &#8226; </li>
+                    <li><a href="pages/contact.html"> Contact Us </a></li>
+                </ul> 
+            </nav>
+            
+            <br><br><br><br>
+            <h3> Let's craft a landscape you'll love. </h3>
+            <p> Landscaping in all parts of San Diego, Bonita, and Chula Vista. </p>
+        </header>
+
+        <section class="main">
+            <h4> Your perfect landscape... made a reality: <br> <span class="not-bold"> Whether you're updating existing landscaping or embarking on an entirely new project, we treat your vision as a work of art: beautiful, timeless, expressive. <br><br></span> </h4>
+            <div class="row">
+                <div class="column plan"> Plan 
+                    <div class="title"> Plan </div>
+                    <p class="description"> Our planning process is built around you. We'll plan every detail without breaking your budget. </p>
+                </div>
+
+                <div class="column design"> Design 
+                    <div class="title"> Design </div>
+                    <p class="description"> We don't build until you approve our design to the very last detail. Thanks to our patented three-step process, we're confident you'll love our designs. </p>
+                </div>
+
+                <div class="column install"> Install 
+                    <div class="title"> Install </div>
+                    <p class="description"> It's a thrill seeing your vision implemented right in front of you. Our installers are seasoned veterans with hundreds of projects just like yours under their belts. </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="slideshow">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext"> </div>
+                    <img src="images/gallery-1.jpg" style="width:100%">
+                    <div class="text"> </div>
+                </div>
+  
+                <div class="mySlides fade">
+                    <div class="numbertext"> </div>
+                    <img src="images/gallery-2.jpg" style="width:100%">
+                    <div class="text"> </div>
+                </div>
+  
+                <div class="mySlides fade">
+                    <div class="numbertext"> </div>
+                    <img src="images/gallery-4.jpg" style="width:100%">
+                    <div class="text"> </div>
+                </div>
+  
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+  
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+        
+        </section>
+
+        <section class="work">
+            <h4 class="end-comment"> Our work speaks for itself. <span class="not-bold"> We've collaborated with an array of wonderful clients on the most rewarding projects. </span> </h4>
+        </section>
+
+        <footer>
+            <div class="CALTRENDS-footerlogo"> </div>
+            <nav>
+                <ul class="footer-nav">
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="pages/about.html"> About </a></li>
+                    <li><a href="pages/gallery.html"> Gallery </a></li>
+                    <li><a href="pages/commercial.html"> Commercial/Residential </a></li>
+                    <li><a href="pages/contact.html"> Contact Us </a></li>
+                </ul> 
+            </nav>
+        </footer>
+    </body>
+</html>
