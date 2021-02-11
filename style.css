@@ -24,6 +24,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -35,7 +36,8 @@ header {
     top: 0;
     left: 0;
     height: 650px;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .CALTRENDS-logo {
@@ -520,10 +522,9 @@ h4{
         position: relative;
         top: -120px;
         margin: 0px 0px;
-        padding: 20px;
+        padding: 20px 20px 20px 0px;
         list-style-type: none;
         text-align: right;
-        list-style: none;
     }
 
     .mobile-nav-dropdown {
@@ -533,12 +534,14 @@ h4{
         background-color: rgb(100, 187, 92);
         text-align: center;
         width: 100%;
-        padding: 10px 10px;
-        z-index: 100;
+        z-index: 3;
+        height: 70vh;
     }
 
     .mobile-nav:hover .mobile-nav-dropdown {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     .mobile-nav-dropdown li{
@@ -658,5 +661,3 @@ h4{
         display: none;
     }
 }
-/* maybe we can do margins depending on percentage according 
-to the res... so the higher our res goes the greater margin percentage we use.. this goes for the headers and body text */
